@@ -1,0 +1,27 @@
+.admin_container{
+    height: 90vh;
+    background-color: pink;
+
+    display: grid;
+    grid-template-rows: 0.1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.m_admin-header{
+    grid-row: 1/2;
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-rows: repeat(2,  1fr);
+    grid-template-columns: repeat(2,  1fr);
+}
+
+.m_admin-header_content{
+    grid-row: 1/-1;
+    grid-column: 1/-1;
+    width: 50%;
+    height: 50%;
+
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+}

@@ -1,0 +1,17 @@
+.footer{
+    background-color: #253064;
+    height: 150px;
+
+    display: grid;
+    grid-template-rows: repeat(2 , 1fr);
+    grid-template-columns: repeat(2 , 1fr);
+}
+
+.footer-text{
+    grid-row: 1/-1;
+    grid-column: 1/-1;
+
+    align-self: center;
+    justify-self: center;
+    color: white;
+}

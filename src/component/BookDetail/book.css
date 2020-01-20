@@ -1,0 +1,382 @@
+.bus_detail{
+    height: 100%;
+    /* background-color: blue; */
+}
+
+.bus_detail-header{
+    background-color: pink;
+    display: grid;
+    height: 200px;
+    grid-template-rows: repeat(2 , 1fr);
+    grid-template-columns: repeat(2 , 1fr);
+}
+
+.bus_detail-info{
+    grid-column: 1/2;
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    grid-template-rows: repeat(3 , 1fr);
+}
+
+.bus_detail-info-name,
+.bus_detail-info-company,
+.bus_detail-info-lux_type,
+.bus_detail-info-number,
+.bus_detail-info-contact,
+.bus_detail-info-seats
+{
+    align-self: center;
+    justify-self: center;
+}
+
+.bus_detail-info-seats{
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
+.bus_detail-info-name{
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+.bus_detail-info-company{
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+
+.bus_detail-info-lux_type{
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+.bus_detail-info-number{
+    grid-row: 2/3;
+    grid-column: 2/3
+}
+
+.bus_detail-info-contact{
+    grid-row: 3/4;
+    grid-column: 1/2;
+}
+
+.bus_detail-available{
+    grid-column: 2/3;
+    display: grid;
+    grid-template-rows: 1.4rem repeat(2 , 1fr);
+    grid-template-columns: repeat(2 , 1fr);
+}
+
+.bus_detail-available-header{
+    grid-row: 1/2;
+    grid-column: 1/-1;
+
+    align-self: center;
+    justify-self: center;
+}
+
+.bus_detail-info,
+.bus_detail-available{
+    grid-row: 1/-1;
+
+    height: 80%;
+    align-self: center;
+}
+
+.bus_icons{
+    grid-row: 2/-1;
+    grid-column: 1/-1;
+    width: 80%;
+    align-self: center;
+    justify-self: center;
+    height: 90%;
+    display: grid;
+    grid-template-rows: repeat(2 , 1fr);
+    grid-template-columns: repeat(2 , 1fr);
+}
+
+.bus_icons-1,
+.bus_icons-2,
+.bus_icons-3,
+.bus_icons-4{
+    align-self: center;
+    justify-self: center;
+    width: 15%;
+    height: 80%;
+}
+
+.bus_icons-1{
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+.bus_icons-2{
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+
+.bus_icons-3{
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+.bus_icons-4{
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+.bus_description{
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: repeat(2 , 1fr);
+
+    height: 400px;
+}
+
+.bus_des{
+    grid-row: 1/2;
+    grid-column: 1/-1;
+
+    width: 70%;
+    align-self: center;
+    justify-self: center;
+}
+
+.bus_img{
+    grid-row: 2/3;
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-rows: repeat(2 , 1fr);
+    grid-template-columns: repeat(3 , 1fr);
+
+    width: 70%;
+    height: 95%;
+    justify-self: center;
+    background-color: powderblue;
+}
+
+.bus_img-1,
+.bus_img-2,
+.bus_img-3{
+    grid-row: 1/-1;
+    width: 80%;
+    height: 80%;
+
+    align-self: center;
+    justify-self: center;
+}
+
+.bus_img-1{
+    grid-column: 1/2;
+}
+
+.bus_img-2{
+    grid-column: 2/3;
+}
+
+.bus_img-3{
+    grid-column: 3/4;
+}
+
+
+/* BOOK BUS */
+
+.book{
+    height: 700px;
+    display: grid;
+    grid-template-rows: repeat(2 , 1fr);
+    grid-template-columns: 1fr 2fr;
+}
+
+.book_seat-layout{
+    grid-row: 1/-1;
+    grid-column: 1/2;
+
+    justify-self: center;
+
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2 , 1fr);
+    /* background-color: teal; */
+}
+
+.book_seat-layout-main{
+    grid-row: 1/-1;
+    grid-column: 1/-1;
+
+    width: 90%;
+    height: 100%;
+    align-self: center;
+    justify-self: center;
+}
+
+.book_seat-control{
+    grid-row: 1/-1;
+    grid-column: 2/3;
+    border: 1px solid purple;
+    border-radius: 10px;
+    justify-self: flex-start;
+
+    display: grid;
+    grid-template-rows: 1fr repeat(2 , 2fr);
+    grid-template-columns: repeat(2 , 1fr);
+}
+
+.book_seat-booked{
+    grid-row: 1/2;
+    grid-column: 1/-1;
+    background-color: rgba(80, 185, 31, 0.767);
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: grid;
+    grid-template-rows: repeat(2 , 1fr);
+    grid-template-columns: repeat(8 , 1fr);
+}
+
+.book_seat-title{
+    align-self: center;
+    justify-self: center;
+}
+
+.book_seat-item-1,
+.book_seat-item-2,
+.book_seat-item-3,
+.book_seat-item-4,
+.book_seat-item-5,
+.book_seat-item-6,
+.book_seat-item-7,
+.book_seat-item-8,
+.book_seat-item-9,
+.book_seat-item-10,
+.book_seat-item-11,
+.book_seat-item-12,
+.book_seat-item-13,
+.book_seat-item-14
+{
+    align-self: center;
+    justify-self: center;
+}
+
+.seat_indicator{
+    grid-row: 2/-1;
+    grid-column: 1/2;
+
+    align-self: center;
+    justify-self: flex-start;
+    margin-left: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 150px;
+    width: 150px;
+
+    display: grid;
+    grid-template-rows: repeat(2 , 1fr);
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+.seat_indicator-red,
+.seat_indicator-green{
+    grid-column: 1/-1;
+    align-self: center;
+    /* padding: 10px; */
+    width: 70%;
+    height: 70%;
+    justify-self: center;
+
+    border-radius: 10px;
+    color: white;
+    text-transform: capitalize;
+    font-size: 18px;
+    text-align: center;
+}
+
+.seat_indicator-red{
+    grid-row: 1/2;
+
+    background-color: red;
+}
+
+.seat_indicator-green{
+    grid-row: 2/-1;
+    background-color: green;
+}
+
+
+.control_form{
+    grid-row: 2/-1;
+    grid-column: 1/-1;
+
+    width: 70%;
+    height: 70%;
+
+    align-self: center;
+    justify-self: flex-end;
+    margin-right: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+
+    display: grid;
+    grid-template-rows: repeat(5 , 1fr);
+    grid-template-columns: repeat(2 , 1fr);
+}
+
+.control_form-text{
+    color: red;
+    font-size: 20px;
+    font-weight: 800;
+
+}
+
+.control_form-title,
+.control_form-form,
+.control_form-select,
+.control_form-text,
+.control_form-btn{
+    width: 75%;
+    height: 75%;
+
+    border-radius: 10px;
+
+    grid-column: 1/-1;
+
+    align-self: center;
+    justify-self: center;
+}
+.control_form-title{
+    grid-row: 1/2;
+
+    align-self: center;
+    justify-self: center;
+}
+
+.control_form-form:hover,
+.control_form-select:hover{
+    /* border: 1px solid blue; */
+}
+
+.control_form-form{
+    border: none;
+    padding: 5px;
+    transition: all .2s ease-out;
+    border: 1px solid black;
+}
+
+.control_form-select{
+    border: none;
+    padding: 5px;
+    transition: all .4s ease-in-out;
+    border: 1px solid black;
+}
+
+.control_form-btn{
+    border: none;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.book_seat-layout,
+.book_seat-control{
+    height: 90%;
+    width: 90%;
+    align-self: center;
+}

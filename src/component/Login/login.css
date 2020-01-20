@@ -1,0 +1,102 @@
+.login{
+    height: 75vh;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2 , 1fr);
+}
+
+.login-form{
+    grid-row: 1/-1;
+    grid-column: 1/-1;
+
+    width: 60%;
+    height: 70%;
+
+    /* border: 1px solid purple; */
+    border-radius: 10px;
+
+    padding: 10px;
+
+    background-color: whitesmoke;
+
+    align-self: center;
+    justify-self: center;
+
+    display: grid;
+    grid-template-rows: 5rem repeat(4, 1fr) 2rem;
+    grid-template-columns: repeat(2 , 1fr);
+}
+
+.login-form-1,
+.login-form-2,
+.login-form-3,
+.login-form-btn,
+.login-form-link{
+    grid-column: 1/-1;
+}
+
+
+.login-form-title{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    align-self: center;
+    justify-self: center;
+
+    font-size: 30px;
+    font-family: 'Roboto' , sans-serif;
+    font-weight: 700;
+    color: #253064;
+}
+
+.login-form-1,
+.login-form-2,
+.login-form-3
+{
+    height: 50%;
+    width: 50%;
+    padding: 10px;
+    align-self: center;
+    justify-self: center;
+
+    border-radius: 10px;
+    border: none;
+    border: 1px solid #253064;
+}
+
+.login-form-1{
+    grid-row: 2/3;
+}
+
+.login-form-2{
+    grid-row: 3/4;
+}   
+
+.login-form-3{
+    grid-row: 4/5;
+}
+
+.login-form-btn{
+    grid-row: 5/6;
+    width: 50%;
+    height: 70%;
+    color:red ;
+
+    align-self: center;
+    justify-self: center;
+
+    background-color: white;
+    color: #253064;
+    border: 1px solid purple;
+
+    border-radius: 10px;
+    font-size: 17px;
+
+    cursor: pointer;
+}
+
+.login-form-link{
+    grid-row: 6/7;
+
+    justify-self: center;
+    align-self: center;
+}
